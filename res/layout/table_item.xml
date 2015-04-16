@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#0000">
+    
+	<LinearLayout
+	    android:id="@+id/dateTitleLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    <RelativeLayout 
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/date">
+	    	<TextView 
+	    	    android:id="@+id/day"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="12"
+	    	    android:textColor="#63B8FF"
+	    	    android:textSize="14sp"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_alignParentLeft="true"
+	    	    android:layout_marginTop="5dp"
+	    	    android:layout_marginLeft="6dp"
+	    	    android:gravity="center"/>   
+	    	<TextView 
+	    	    android:id="@+id/month"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="12"
+	    	    android:textColor="#000"
+	    	    android:textSize="10sp"
+	    	    android:layout_alignParentBottom="true"
+	    	    android:layout_alignParentRight="true"
+	    	    android:layout_marginBottom="7dp"
+	    	    android:layout_marginRight="8dp"/> 	    	    	    	     
+	    </RelativeLayout>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/weekDay"
+	        android:text="周天"
+	        android:textSize="25sp"
+	        android:textColor="#63B8FF"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="5dp"/>"
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/diaryTextLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"   
+	    android:visibility="gone">
+	  	<TextView
+	  	    android:id="@+id/diaryText"
+	  	    android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="diary"
+	    	android:textColor="#000"
+	    	android:textSize="19sp"
+	    	android:layout_gravity="center_vertical"
+	    	android:layout_marginLeft="35dp"/>  
+	</LinearLayout>
+  	
+	<LinearLayout
+	    android:id="@+id/gridPicLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="35dp"
+	    android:orientation="horizontal">
+		<com.jog.pics.TableGridView
+		    android:id="@+id/gridView"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:horizontalSpacing="1dp"
+		    android:numColumns="4"
+		    android:verticalSpacing="1dp" >
+		</com.jog.pics.TableGridView>
+
+	</LinearLayout>	
+
+</LinearLayout>
